@@ -1,0 +1,108 @@
+/***
+ *    .______       _______     _______. _______ .___________.
+ *    |   _  \     |   ____|   /       ||   ____||           |
+ *    |  |_)  |    |  |__     |   (----`|  |__   `---|  |----`
+ *    |      /     |   __|     \   \    |   __|      |  |     
+ *    |  |\  \----.|  |____.----)   |   |  |____     |  |     
+ *    | _| `._____||_______|_______/    |_______|    |__|     
+ *                                                            
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*    .______     ______   ___   ___         _______. __   ________   __  .__   __.   _______ 
+*    |   _  \   /  __  \  \  \ /  /        /       ||  | |       /  |  | |  \ |  |  /  _____|
+*    |  |_)  | |  |  |  |  \  V  /        |   (----`|  | `---/  /   |  | |   \|  | |  |  __  
+*    |   _  <  |  |  |  |   >   <          \   \    |  |    /  /    |  | |  . `  | |  | |_ | 
+*    |  |_)  | |  `--'  |  /  .  \     .----)   |   |  |   /  /----.|  | |  |\   | |  |__| | 
+*    |______/   \______/  /__/ \__\    |_______/    |__|  /________||__| |__| \__|  \______| 
+*                                                                                            
+*/
+html {
+   box-sizing: border-box;
+   font-family: verdana;
+   font-size: 62.5%;
+   color: #000000;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+/***
+ *     _______   ______     ______   .___________. _______ .______              ___    __    __   _______     ___       _______   _______ .______      
+ *    |   ____| /  __  \   /  __  \  |           ||   ____||   _  \            /  /   |  |  |  | |   ____|   /   \     |       \ |   ____||   _  \     
+ *    |  |__   |  |  |  | |  |  |  | `---|  |----`|  |__   |  |_)  |          /  /    |  |__|  | |  |__     /  ^  \    |  .--.  ||  |__   |  |_)  |    
+ *    |   __|  |  |  |  | |  |  |  |     |  |     |   __|  |      /          /  /     |   __   | |   __|   /  /_\  \   |  |  |  ||   __|  |      /     
+ *    |  |     |  `--'  | |  `--'  |     |  |     |  |____ |  |\  \----.    /  /      |  |  |  | |  |____ /  _____  \  |  '--'  ||  |____ |  |\  \----.
+ *    |__|      \______/   \______/      |__|     |_______|| _| `._____|   /__/       |__|  |__| |_______/__/     \__\ |_______/ |_______|| _| `._____|
+ *                                                                                                                                                     
+ */
+ *      _______ .______       __   _______  
+ *     /  _____||   _  \     |  | |       \ 
+ *    |  |  __  |  |_)  |    |  | |  .--.  |
+ *    |  | |_ | |      /     |  | |  |  |  |
+ *    |  |__| | |  |\  \----.|  | |  '--'  |
+ *     \______| | _| `._____||__| |_______/ 
+ *                                          
+ */
+ body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 6rem 1fr 6rem;
+	grid-template-areas: "h"
+						 "i"
+						 "l"
+						 "f";
+  }
+  header{
+	  grid-area: h;
+  }
+  #insertBlog{
+	  grid-area: i;
+  }
+  #listeBlog{
+	  grid-area: l;
+  }
+  footer{
+	  grid-area: f;
+  }
+  
